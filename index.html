@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="เว็บไซต์ Portfolio ของ ธนกฤต ธนันชัย นักเรียนชั้นมัธยมศึกษาปีที่ 3">
+  <title>Artie Portfolio | หน้าแรก</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="battle-bg" aria-hidden="true">
+    <span class="spark s1"></span><span class="spark s2"></span><span class="spark s3"></span>
+    <span class="spark s4"></span><span class="spark s5"></span>
+    <span class="smoke smoke1"></span><span class="smoke smoke2"></span>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="เมนูหลัก">
+      <a class="brand" href="index.html"><span class="brand-mark">A</span><span>ARTIE<span class="dot">.</span></span></a>
+      <div class="nav-links">
+        <a class="active" href="index.html">หน้าแรก</a>
+        <a href="profile.html">ประวัติส่วนตัว</a>
+        <a href="education.html">การศึกษา</a>
+        <a href="hobby.html">งานอดิเรก</a>
+        <a href="contact.html">ติดต่อ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">STUDENT PORTFOLIO • M.3/2</p>
+        <h1>สวัสดีครับ ผม<br><strong>ธนกฤต ธนันชัย</strong></h1>
+        <p class="hero-text">“เรียนรู้ให้เต็มที่ สนุกกับสิ่งที่ชอบ และสร้างผลงานให้เป็นตัวเรา”</p>
+        <p class="muted">ผมชื่อเล่น <b>อาร์ตี้</b> นักเรียนชั้น ม.3/2 ที่สนใจฟุตบอล คณิตศาสตร์ และคอมพิวเตอร์</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="profile.html">รู้จักฉันมากขึ้น <span>→</span></a>
+          <a class="btn btn-ghost" href="hobby.html">ดูงานอดิเรกของฉัน</a>
+        </div>
+        <div class="mini-stats">
+          <div><b>14</b><span>อายุ</span></div>
+          <div><b>M.3/2</b><span>ระดับชั้น</span></div>
+          <div><b>⚽</b><span>ความสนใจ</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay">
+        <div class="target-ring ring1"></div><div class="target-ring ring2"></div>
+        <div class="profile-frame">
+          <img src="https://cdn.jsdelivr.net/gh/22831Thanakrit/webpage09/Arty.png" alt="รูปโปรไฟล์ของธนกฤต ธนันชัย">
+          <span class="scan-line"></span>
+        </div>
+        <div class="floating-badge badge-one">⚡ CREATIVE</div>
+        <div class="floating-badge badge-two">⚽ FOOTBALL</div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">MISSION BRIEF</p>
+        <h2>นี่คือเรื่องราวของผม</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card accent-card"><span class="icon">⌁</span><h3>นักเรียนสายสร้างสรรค์</h3><p>ชอบเรียนรู้สิ่งใหม่และนำเทคโนโลยีมาสร้างผลงานที่น่าสนใจ</p></article>
+        <article class="feature-card"><span class="icon">⌘</span><h3>ชอบคณิตศาสตร์ & คอมพิวเตอร์</h3><p>สนุกกับการคิด วิเคราะห์ แก้ปัญหา และทดลองเขียนเว็บไซต์</p></article>
+        <article class="feature-card"><span class="icon">⚽</span><h3>พลังจากฟุตบอล</h3><p>ฟุตบอลคือกิจกรรมที่ช่วยฝึกความพยายาม การทำงานเป็นทีม และความมีวินัย</p></article>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <div><p class="eyebrow">NEXT MISSION</p><h2>อยากรู้จักผมในมุมอื่นอีกไหม?</h2></div>
+      <a class="btn btn-primary" href="contact.html">ไปที่หน้าติดต่อ →</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><div><b>ARTIE<span class="dot">.</span></b><p>ธนกฤต ธนันชัย • ม.3/2</p></div><div class="footer-links"><a href="index.html">หน้าแรก</a><a href="profile.html">ประวัติส่วนตัว</a><a href="education.html">การศึกษา</a><a href="hobby.html">งานอดิเรก</a><a href="contact.html">ติดต่อ</a></div><p>© 2026 Artie Portfolio</p></div>
+  </footer>
+  <script>
+    document.addEventListener('click', e => {
+      const burst = document.createElement('span'); burst.className='click-burst';
+      burst.style.left=e.clientX+'px'; burst.style.top=e.clientY+'px'; document.body.appendChild(burst);
+      setTimeout(()=>burst.remove(),700);
+    });
+  </script>
+</body>
+</html>
